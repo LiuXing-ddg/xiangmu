@@ -1,0 +1,122 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.box .ad {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    display: block;
+    background: url(../images/58cde3a6-864b-48ca-bcff-5135c0c599b6.png) no-repeat 50%;
+}
+
+.cha {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 20px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.cha span {
+    color: white;
+    font-size: 24px;
+}
+
+.main {
+    width: 1200px;
+}
+
+.welcome {
+    height: 35px;
+    line-height: 20px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e6e6e6;
+    background: #f4f4f4;
+}
+
+.welcome2 {
+    width: 1190px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: #222;
+}
+
+.welcome2 .wel_left {
+    float: left;
+}
+
+.welcome2 .wel_left span {
+    font-size: 14px;
+    color: black;
+}
+
+.welcome2 .wel_right {
+    float: right;
+}
+
+.welcome2 .wel_right .item a {
+    color: black;
+    font-size: 14px;
+}
+
+.welcome2 .wel_right .item {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 12px;
+    border-left: 1px solid #dbdbdb;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.welcome2 .wel_right .item .tel {
+    height: 26px;
+    margin-top: -3px;
+}
+
+.logo {
+    height: 80px;
+    padding: 12px 0;
+}
+
+.logo2 {
+    height: 65px;
+}
+
+.logo2 .logobox {
+    float: left;
+    width: 270px;
+    height: 50px;
+    margin-right: 30px;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.logo2 .logobox img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.logo2 .ewm {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-top: -15px;
+    text-align: right;
+}
