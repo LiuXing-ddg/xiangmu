@@ -4,7 +4,11 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
+}
+
+a :hover {
+    text-decoration: none
 }
 
 li {
@@ -34,7 +38,7 @@ li {
 }
 
 .main {
-    width: 1200px;
+    width: 1190px;
 }
 
 .welcome {
@@ -419,6 +423,10 @@ m-categories-list .categories-item {
     background: #fff;
 }
 
+.m-categories-list .trigger:hover .category-body {
+    display: block;
+}
+
 .m-categories-list .trigger:hover .category-title a {
     color: black;
 }
@@ -427,30 +435,10 @@ m-categories-list .categories-item {
     color: red;
 }
 
-
-/* .category-icon-black {
-    display: none;
-}
-
-.category-icon-white {
-    display: inline-block;
-}
-
-.m-categories-list .trigger:hover .category-title .category-icon-black {
-    display: block;
-}
-
-.m-categories-list .trigger:hover .category-title .category-icon-white {
-    display: none;
-}
-
-.m-categories-list .trigger:hover .category-body {
-    display: block;
-} */
-
 .lunbo {
     position: relative;
     height: 460px;
+    background: #4B8F9D;
 }
 
 .lunbo2 {
@@ -486,7 +474,537 @@ m-categories-list .categories-item {
     background: #fff;
 }
 
-.lunbo2 .spe {
+.lunbo2 .banner .login .hi {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #222;
+}
+
+.lunbo2 .banner .login .hy {
+    height: 36px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #888;
+}
+
+.lunbo2 .banner .login .handler {
+    margin-bottom: 20px;
+}
+
+.lunbo2 .banner .login .handler .zc {
+    background: #f03a58;
+    color: #fff;
+    margin-left: 0;
+    display: inline-block;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #f03a58;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.lunbo2 .banner .login .handler .dl {
+    display: inline-block;
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 10px;
+    border: 1px solid #f03a58;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #f03a58;
+}
+
+.lunbo2 .banner .login ul {
+    padding-top: 5px;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+}
+
+.lunbo2 .banner .login ul li {
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lunbo2 .banner .login ul li a {
+    color: black;
+}
+
+.lunbo2 .banner .login .news-more {
+    text-align: right;
+}
+
+.lunbo .spe {
     width: 970px;
     height: 130px;
+    padding: 10px 0 10px 0;
+}
+
+.spe a {
+    float: left;
+    width: 230px;
+    height: 110px;
+    margin-left: 10px;
+}
+
+.spe a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.lunbo2 .banner .imgbox {
+    position: relative;
+}
+
+#container {
+    width: 730px;
+    height: 330px;
+    overflow: hidden;
+}
+
+#container .tab {
+    float: left;
+    margin-right: 10px;
+    width: 6px;
+    height: 6px;
+    border: 3px solid rgba(184, 178, 182, .8);
+    border-radius: 50%;
+    background: #989196;
+    cursor: pointer;
+}
+
+#container .active {
+    background: #fff;
+    border-color: #999497;
+}
+
+#container .item img {
+    width: 729px;
+    height: 329px;
+}
+
+#tabs {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+#tabs {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
+#tabs li {
+    list-style: none;
+}
+
+.tab {
+    float: left;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(184, 178, 182, .8);
+    border-radius: 50%;
+    /*background:#989196;*/
+    /*cursor:pointer;*/
+}
+
+.active {
+    background: #fff;
+    border-color: #999497;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 40px;
+    height: 70px;
+    color: #d6d3d5;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.prev {
+    position: absolute;
+    left: 0px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.dapai2 .top {
+    width: 100%;
+    margin: 20px 0 0;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.dapai2 .top .left {
+    width: 1000px;
+    float: left;
+}
+
+.dapai2 .top a {
+    float: right;
+    font-size: 14px;
+    color: #222;
+}
+
+.dapai2 .top .left .title {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    color: #888;
+    padding: 0 8px;
+    margin-right: 38px;
+    line-height: 38px;
+}
+
+.dapai2 .top .left .active {
+    color: #f03a58;
+    border-bottom: 2px solid #f03a58;
+}
+
+.dapai2 .content .active2 {
+    display: block;
+}
+
+.dapai2 .content .content2 {
+    margin-left: -10px;
+    height: 175px;
+}
+
+.dapai2 .content .content2 a {
+    float: left;
+    width: 230px;
+    height: 175px;
+    margin-left: 10px;
+}
+
+.dapai2 .content .content2 a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.dapai2 .content .content2 {
+    display: none;
+}
+
+.dapai2 .content .active2 {
+    display: block;
+}
+
+.baokuan .top {
+    margin: 20px 0 0;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+
+.baokuan .top .title {
+    font-size: 20px;
+    color: #222;
+}
+
+.baokuan .content {
+    height: 325px;
+    margin-left: -10px;
+}
+
+.baokuan .content .hot_goods {
+    width: 230px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+    background: #fff;
+}
+
+.baokuan .content .hot_goods .remark {
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+    border-radius: 2px;
+    background: #fef0f0;
+    border: 1px solid #f03a58;
+    height: 25px;
+    box-sizing: border-box;
+    line-height: 23px;
+    padding: 0 5px;
+    color: #f03a58;
+    font-size: 12px;
+}
+
+.baokuan .content .hot_goods .goodimg {
+    display: block;
+    width: 170px;
+    height: 170px;
+    margin: 15px 30px 10px;
+}
+
+.baokuan .content .hot_goods .goodimg img {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+}
+
+.baokuan .content .hot_goods .goodName {
+    height: 42px;
+    overflow: hidden;
+    line-height: 21px;
+    color: #222;
+    width: 200px;
+    margin: 0 15px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.baokuan .content .hot_goods .hot-price {
+    width: 200px;
+    margin: 10px 15px 5px;
+    height: 24px;
+    line-height: 24px;
+    color: #f03a58;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.baokuan .content .hot_goods .go-btns {
+    display: block;
+    width: 200px;
+    margin: 0 15px 15px;
+    background: #f03a58;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.recommend2 .top {
+    margin: 20px 0 0;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+
+.recommend2 .top .title {
+    font-size: 20px;
+    color: #222;
+}
+
+.recommend2 .content {
+    margin-left: -10px;
+    height: 290px;
+}
+
+.recommend2 .content a {
+    width: 230px;
+    height: 290px;
+    float: left;
+    margin-left: 10px;
+}
+
+.recommend2 .content a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.fanghu2>.top {
+    margin: 20px 0 0;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+}
+
+.fanghu2>.top .title {
+    font-size: 20px;
+    color: #222;
+}
+
+.fanghu2 .content {
+    margin-left: -10px;
+    height: 540px;
+}
+
+.fanghu2 .content .left {
+    float: left;
+    width: 590px;
+    height: 540px;
+    margin-left: 10px;
+}
+
+.fanghu2 .content .left .left2 {
+    height: 100%;
+    background: #fff;
+}
+
+.fanghu2 .content .left .left2 .one {
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 100%;
+    background-color: #eee;
+}
+
+.fanghu2 .content .left .left2 .one a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.fanghu2 .content .left .left2 .one a img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.fanghu2 .content .left .left2 .one .nav-list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    height: 200px;
+}
+
+.fanghu2 .content .left .left2 .one .nav-list a {
+    float: left;
+    width: 88px;
+    height: 28px;
+    line-height: 28px;
+    margin: 15px 0 0 17px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fanghu2 .content .left .left2 .two {
+    float: left;
+    width: 360px;
+}
+
+.fanghu2 .content .left .left2 .two .top {
+    height: 40px;
+    width: 360px;
+}
+
+.fanghu2 .content .left .left2 .two .top a {
+    float: left;
+    width: 33.333%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.fanghu2 .content .left .left2 .two .top a span {
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 5px;
+    font-size: 14px;
+    transition: .2s;
+}
+
+.fanghu2 .content .left .left2 .two .top .active {
+    border-bottom: 3px solid #f03a58;
+    color: #f03a58;
+}
+
+.fanghu2 .content .left .left2 .two .wraper {
+    overflow: hidden;
+    position: relative;
+    width: 361px;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan {
+    width: 1083px;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 560px;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content {
+    float: left;
+    width: 361px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a {
+    float: left;
+    width: 180px;
+    height: 250px;
+    box-shadow: inset 1px 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a .pic {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto 0;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a .pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a .info {
+    width: 150px;
+    margin: 10px auto 0;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a .info .name {
+    overflow: hidden;
+    height: 32px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #222;
+}
+
+.fanghu2 .content .left .left2 .two .wraper .jiaojuan .tab_content a .info .price {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f03a58;
 }
