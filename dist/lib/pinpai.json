@@ -1,0 +1,46 @@
+[{
+        "id": 1,
+        "name": "国际大牌",
+        "list": [{
+            "image": "../images/aaa.png"
+        }, {
+            "image": "../images/bbb.png"
+        }, {
+            "image": "../images/ccc.png"
+        }, {
+            "image": "../images/ddd.png"
+        }, {
+            "image": "../images/eee.png"
+        }]
+    },
+    {
+        "id": 2,
+        "name": "国货精品",
+        "list": [{
+            "image": "../images/fff.png"
+        }, {
+            "image": "../images/ggg.png"
+        }, {
+            "image": "../images/hhh.png"
+        }, {
+            "image": "../images/iii.png"
+        }, {
+            "image": "../images/jjj.png"
+        }]
+    },
+    {
+        "id": 3,
+        "name": "特惠品牌",
+        "list": [{
+            "image": "../images/kkk.png"
+        }, {
+            "image": "../images/lll.png"
+        }, {
+            "image": "../images/nnn.png"
+        }, {
+            "image": "../images/mmm.png"
+        }, {
+            "image": "../images/jjj.png"
+        }]
+    }
+]
