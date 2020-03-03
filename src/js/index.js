@@ -99,11 +99,34 @@ window.addEventListener("DOMContentLoaded", function() {
                     $(this).addClass('active').siblings().removeClass('active');
                     $('.dapai2 .content .content2').removeClass('active2').eq($(this).index()).addClass('active2')
                 });
-
-
             }
         })
     }
+    //列表图片
+    lbtp();
+
+    function lbtp() {
+        $.ajax({
+            url: '../lib/pinpai.json',
+            dataType: 'json',
+            success: function(res) {
+                console.log(res)
+                let str = '';
+                res.forEach(item => {
+                    str += ` <div class="content2">`;
+                    item.list.forEach(temp => {
+                        str += `<a href=""> `
+                        str += `<img src="${temp.image}" alt="">`
+                        str += ` </a>`;
+                    })
+                    str += `</div>`;
+                })
+                $('.dapai2 .content').html(str);
+                $('.dapai2 .content .content2').first().addClass('active2');
+            }
+        })
+    }
+
     //爆款特惠
     baokuan();
 
@@ -149,52 +172,31 @@ window.addEventListener("DOMContentLoaded", function() {
         })
     }
     //胶卷
-    // jiaojuan();
+    jiaojuan();
 
-    // function jiaojuan() {
-    //     $.ajax({
-    //         url: '../lib/jiaojuan.json',
-    //         dataType: 'json',
-    //         success: function(res) {
-    //             console.log(res)
-    //             let arr2 = '';
-    //             res.forEach(item => {
-    //                 arr2 += `
-    //                 <div class="tab_content">
-    //                 <a href="">
-    //                     <div class="pic"><img src="${item.img}"></div>
-    //                     <div class="info">
-    //                         <p class="name">${item.name}</p>
-    //                         <p class="price">${item.price}</p>
-    //                     </div>
-    //                 </a>
-    //                 <a href="">
-    //                     <div class="pic"><img src="${item.img}"></div>
-    //                     <div class="info">
-    //                         <p class="name">${item.name}</p>
-    //                         <p class="price">${item.price}</p>
-    //                     </div>
-    //                 </a>
-    //                 <a href="">
-    //                 <div class="pic"><img src="${item.img}"></div>
-    //                 <div class="info">
-    //                     <p class="name">${item.name}</p>
-    //                     <p class="price">${item.price}</p>
-    //                 </div>
-    //                 </a>
-    //                 <a href="">
-    //                 <div class="pic"><img src="${item.img}"></div>
-    //                 <div class="info">
-    //                     <p class="name">${item.name}</p>
-    //                     <p class="price">${item.price}</p>
-    //                 </div>
-    //                 </a>
-    //                 </div>
-    //                 `
-    //             })
-    //             $('.jiaojuan').html(arr2);
+    function jiaojuan() {
+        $.ajax({
+            url: '../lib/jiaojuan.json',
+            dataType: 'json',
+            success: function(res) {
+                console.log(res)
+                let str = '';
+                res.forEach(item => {
+                    str += ` <div class="tab_content">`;
+                    item.list.forEach(temp => {
 
-    //         }
-    //     })
-    // }
+                        str += `<a href=""> `
+                        str += `<div class="pic"><img src="${temp.img}"></div> `
+                        str += `<div class="info"> `
+                        str += ` <p class="name">${temp.name}</p> `
+                        str += ` <p class="price">${temp.price}</p> `
+                        str += ` </div> `
+                        str += ` </a>`;
+                    })
+                    str += `</div>`;
+                })
+                $('.jiaojuan').html(str);
+            }
+        })
+    }
 })
