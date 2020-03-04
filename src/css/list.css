@@ -645,7 +645,6 @@ li {
 .goodlist2 {
     height: 2600px;
     background: white;
-    overflow: hidden;
 }
 
 .goodlist2 .good_item {
@@ -834,44 +833,12 @@ li {
     cursor: pointer;
 }
 
-.yema2 {
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0;
+.pagi {
     background: white;
-}
-
-.yema a {
-    border-radius: 2px;
-    background: #f4f4f5;
-    display: inline-block;
-    vertical-align: top;
-    height: 30px;
-    /* width: 30px; */
-    margin: 0 3px;
-    padding: 0 5px;
-    line-height: 30px;
-    min-width: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: #222;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.yema .on {
-    background: #f03a58;
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    border-radius: 2px;
-    display: inline-block;
-    height: 30px;
-    /* width: 30px; */
-    margin: 0 3px;
-    padding: 0 5px;
-    line-height: 30px;
-    min-width: 20px;
-    text-align: center;
-    font-size: 14px;
+    width: 1190px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
