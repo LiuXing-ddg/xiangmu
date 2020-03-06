@@ -200,3 +200,13 @@ window.addEventListener("DOMContentLoaded", function() {
         })
     }
 })
+window.onload = function() {
+    if (getCookie("login") == "" || document.cookie.length == 0) {
+
+    } else {
+        $('.lunbo2 .handler').css({
+            display: 'none'
+        })
+        $('.lunbo2 .hy').removeClass("hy").addClass("haha").html(getCookie('login'))
+    }
+}

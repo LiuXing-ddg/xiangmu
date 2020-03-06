@@ -293,8 +293,19 @@ li {
 
 .didian2 .sy {
     color: #222;
+    float: left;
     font-size: 12px;
     text-decoration: none;
+}
+
+.Liclass {
+    border: 1px solid red;
+}
+
+.namename {
+    margin-left: 10px;
+    width: 1000px;
+    float: left;
 }
 
 .goodinfo2 {

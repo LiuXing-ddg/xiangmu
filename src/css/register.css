@@ -1,0 +1,142 @@
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.main {
+    width: 1200px;
+}
+
+a {
+    text-decoration: none
+}
+
+a :hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.m-register-header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    font-size: 0;
+}
+
+.m-register-header .m-header-content {
+    height: 100px;
+    border-collapse: collapse;
+}
+
+.g-wrapper,
+.g-wrapper-new {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-register-header .m-header-content .header-item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.m-register-header .m-header-content .header-item img {
+    width: 100px;
+    height: 40px;
+    margin: 30px 33px 0;
+}
+
+.m-register-header .m-header-content .header-item.theme {
+    width: 126px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: #222;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    margin: 35px 0;
+}
+
+.m-register-header .m-header-content .register-header-right {
+    float: right;
+    margin: 35px 0;
+}
+
+.m-register-header .m-header-content .register-header-right .register-title {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.m-register-header .m-header-content .register-header-right .register-title .tip {
+    text-align: right;
+}
+
+.m-register-header .m-header-content .register-header-right .register-title .tip .btn {
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    padding: 0 25px;
+    line-height: 30px;
+    color: #dc0737;
+    border: 1px solid #dc0737;
+    border-radius: 3px;
+}
+
+.contend2 {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.contend2 .register-container {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.register-info {
+    padding-left: 80px;
+}
+
+.form-item {
+    margin-top: 35px;
+}
+
+.m-form-full .form-item .item-title {
+    float: left;
+    width: 110px;
+    min-height: 50px;
+    line-height: 50px;
+    text-align: left;
+    font-size: 16px;
+    color: #222;
+}
+
+.form-item .item-cont {
+    width: 400px;
+}
+
+.form-item input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px 5px 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+}
+
+.m-form-full .form-item .item-cont .btn-submit {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    background: #f03a58;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    width: 150px;
+}

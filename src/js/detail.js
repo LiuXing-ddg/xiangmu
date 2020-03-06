@@ -23,6 +23,29 @@ window.addEventListener("DOMContentLoaded", function() {
     middleArea.style.height = (parseFloat(getStyle(middleImg, "height")) /
             parseFloat(getStyle(bigImg, "height"))) *
         parseFloat(getStyle(bigArea, "height")) + "px";
+
+
+    //渲染
+    const info = JSON.parse(localStorage.getItem('goodsInfo'));
+    //判断数据是否存在
+    if (!info) {
+        alert("你要查看的数据不存在")
+        window.location.href = './list.html';
+    }
+    bindHtml();
+
+    function bindHtml() {
+        $('.namename').html(info.info);
+        $('#middleImg img').attr('src', info.image);
+        $('.product-title').html(info.info);
+        $('.price-current span').html(info.price);
+        $('.m-top20 .hh').html(info.num1.substring(4));
+        $('.m-top20 .xh').html(info.num2.substring(5));
+        $('.m-top20 .hq').html(info.date.substring(4));
+        $('#small ul').find('.yi img').attr('src', info.image);
+        $('#bigImg').attr('src', info.image);
+
+    }
     //比例
     var oScale = parseFloat(getStyle(bigArea, "width")) / parseFloat(getStyle(middleArea, "width"));
     //鼠标进入
@@ -65,8 +88,46 @@ window.addEventListener("DOMContentLoaded", function() {
                 imgSmalls[j].className = "";
             }
             this.className = "Liclass";
-            imgBigs.src = `../images/${this.tempIndex+11}.jpg`;
-            bigImg.src = `../images/${this.tempIndex+11}.jpg`;
+            imgBigs.src = $(this).find('img').attr("src");
+            bigImg.src = info.image;
         }
     }
+    //加入购物车
+    $('.addCart').click(() => {
+        //判断是否登录
+        if (getCookie("login") == "" || document.cookie.length == 0) {
+            alert("请登录");
+            window.location.href = './login.html';
+        } else {
+            alert("加入购物车成功")
+                //加入购物车数组
+            const cartList = JSON.parse(localStorage.getItem('cartList')) || []
+                //判断里面是几条相同的数据(同一个商品点2尺购物车)
+            let exits = cartList.some(item => {
+                return item.id === info.id;
+            })
+            if (exits) {
+                let data = null;
+                for (let i = 0; i < cartList.length; i++) {
+                    if (cartList[i].id === info.id) {
+                        data = cartList[i];
+                        break;
+                    }
+                }
+                data.num++;
+                //小计也改变
+                data.xiaoji = data.num * parseFloat(data.price);
+            } else {
+                info.num = 1;
+                info.xiaoji = parseFloat(info.price);;
+                // info.isSelect = false;
+                cartList.push(info)
+            }
+            //把本条数据加进去
+            // cartList.push(info);
+            localStorage.setItem('cartList', JSON.stringify(cartList))
+            console.log(cartList);
+        }
+
+    })
 })

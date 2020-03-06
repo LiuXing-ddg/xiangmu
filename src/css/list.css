@@ -842,3 +842,18 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+.gwc {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 400px;
+    right: 100px;
+    background-color: yellowgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.gwc p {
+    font-size: 32px;
+}
