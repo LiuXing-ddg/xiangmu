@@ -730,3 +730,18 @@ li {
     color: #222;
     box-sizing: border-box;
 }
+
+.gwc {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 400px;
+    right: 100px;
+    background-color: yellowgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.gwc p {
+    font-size: 32px;
+}

@@ -127,6 +127,7 @@ window.addEventListener("DOMContentLoaded", function() {
             // cartList.push(info);
             localStorage.setItem('cartList', JSON.stringify(cartList))
             console.log(cartList);
+            window.location.href = './list.html';
         }
 
     })

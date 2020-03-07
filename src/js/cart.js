@@ -177,14 +177,22 @@ window.onload = function() {
             // console.log(this);
             const id = $(this).data('id')
                 //循环数组 打对应的num和小计修改
-            cartList.forEach(item => {
-                if (item.id === id) {
-                    //把数组清空
-                    localStorage.removeItem(item);
-                }
-            })
-            bindHtml();
-            localStorage.setItem('cartList', JSON.stringify(cartList));
+            $.each(cartList, function(index, item) {
+                    if (item.id === id) {
+                        cartList.splice(index, 1)
+                    }
+                    bindHtml();
+                    localStorage.setItem('cartList', JSON.stringify(cartList));
+                })
+                // cartList.forEach(item => {
+                //     if (item.id === id) {
+                //         cartList.splice(1, 1)
+                //     }
+                //    
+                //     
+                // })
+
+
         })
         $('.cartbox2').on('click', '.shanchu', function() {
             localStorage.removeItem('cartList')
